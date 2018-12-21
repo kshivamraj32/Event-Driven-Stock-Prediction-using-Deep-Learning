@@ -21,7 +21,7 @@ Use NLP to predict stock price movement based on news from Reuters, we need the 
 
     1.2 crawl news 
     
-    1.3 crawl prices using urllib2 (Yahoo Finance API is outdated)
+    1.3 crawl prices using urllib3 (Yahoo Finance API is outdated)
 
 2. Train the GloVe in corpus in NLTK
 
@@ -35,12 +35,12 @@ Use NLP to predict stock price movement based on news from Reuters, we need the 
   
     3.2 Extract feature using feature hashing based on the trained word vector (step 2)
   
-    3.3 Pad word senquence (essentially a matrix) to keep the same dimension
+    3.3 Pad word sequence (essentially a matrix) to keep the same dimension
   
 4. Trained a ConvNet to predict the stock price movement based on a reasonable parameter selection
 5. The result shows a significant 1-2% improve on the test set
 
-Use the following script to crawl it and format it to our local file
+Use the following script to crawl it and format it to your local file
 Note : We can relate the news with company and date, this is more precise than Bloomberg News
 #### 1 Crawling of Data
 
